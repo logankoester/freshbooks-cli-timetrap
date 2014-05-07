@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+path = require('path');
+
+exports.command = {
+  description: 'Integrates the freshbooks-cli tools with timetrap time tracking"',
+  arguments: null // Optional arguments string to display
+};
+
+if (require.main === module) {
+  require(path.join(__dirname, '..', 'index.js'));
+}
